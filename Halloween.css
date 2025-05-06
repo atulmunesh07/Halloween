@@ -1,0 +1,312 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Outfit:wght@100..900&family=Playwrite+RO:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Varela&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    text-transform: capitalize;
+    transition: all 0.5s linear;
+
+}
+body{
+    background-color: rgb(32 0 62);
+    color:#fff;
+    font-family: "Lacquer", system-ui;
+}
+.homepg{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(2 10 10/37%), rgba(2 10 10/20%)), url(hallowin-images/b1.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+
+}
+.logo{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    margin-right: 3%;
+
+}
+/* nave scllor */
+.navbar.scrolled{
+    background-color: hsla(282, 100%, 7%,0.5);
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    padding: 2% 6%;align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+    transition: background-color 0.5s ;
+    top:  0;
+    cursor: pointer;
+}
+.navbar-items{
+    position: absolute;
+    background-color: hsla(282,100%,33%,0.5);
+    backdrop-filter: blur(14px);
+    height: 100vh;
+    width: 350px;
+    z-index: 2;
+    right: 0;
+    left: 1;
+    margin-top: 620px;
+    transition: all 1s ease-in;
+}
+.navbar-items ul li{
+    margin: 13% 0;
+    margin-left:15px ;
+    list-style: none;
+
+}
+.navbar-items ul{
+    padding-top:40% ;
+    margin-left: 2%;
+}
+.navbar-items ul li a{
+    color: #fff;
+    padding: 9px 25px;
+    font-size:25px ;
+    text-decoration: none;
+    border:2px solid transparent;
+
+}
+.navbar-items ul li a:hover{
+    border: 2px solid #ffa500;
+    color: #ffa500;
+    border-radius: 10px;
+}
+.burger{
+    z-index: 3;
+    color: #ffa500;
+    font-size: 40px;
+}
+/* this used to side nave bar use to them */
+.h-class{
+    right: -100%;
+}
+.v-class{
+    right: 0;
+}
+
+.content{
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    
+}
+.heading{
+    font-size: 5em;
+}
+.heading .heading1, span{
+    color: #ffa500;
+}
+.para{
+    font-size: 13px;
+    padding: 2.5% 0;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+.btn{
+    border: 2px solid #ffa500;
+    border: 2px solid ;
+    padding: 15px 13px;
+    font-size: 20px;
+    background-color: purple;
+    background: linear-gradient(200deg, rgb(175, 142, 175)35%, rgb(224, 150, 12)100%);
+    cursor: pointer;
+    letter-spacing: 2px;
+    color: #fff;
+   
+    
+
+}
+.btn:hover{
+   
+    border: 2px solid #fff;
+    background: transparent;
+}
+
+
+/* ---------------category------------------- */
+.row{
+    text-align: center;
+    padding: 7em 0 2em 0;
+    background:linear-gradient(-29deg,rgb(255 193 7/33%)0%,
+    rgb(32 0 62)22%,rgb(32 0 62)80%,rgb(63 2 54)100%
+    );
+}
+.heading1{
+    font-size: 2.5em;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    padding: 7em 0 5em 0;
+}
+.box{
+    background-color: hsla(308, 78%, 15%, 0.53);
+    border-radius: 15px;
+    margin: 2% 3%;
+    padding-top:6.5em ;
+    position: relative;
+    cursor: pointer;
+    box-shadow: rgba(0,0,0,0.30) 0px 3px 8px;
+}
+.box img{
+    width: 190px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition:  top 0.3s ease-out;
+}
+.box img:hover{
+    top: -20px;
+}
+.box h1{
+    color: #ffa500;
+    font-size: 45px;
+    padding: 5px 0;
+}
+.box p{
+    font-size: 15px;
+
+}
+ /*-------------------about sec----------------  */
+
+ .about{
+    background:linear-gradient(-29deg,rgb(255 193 7/33%)0%,
+    rgb(32 0 62)22%,rgb(32 0 62)80%,rgb(63 2 54)100%
+    );
+
+ }
+ .about_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 2% 0;
+    margin: auto;
+    gap: 30px;
+ }
+ .left.right{
+    width: 50%;
+
+ }
+ .left img{
+    width: 400px;
+    border-radius: 15px;
+ }
+ .right{
+    text-align: left;
+ }
+ /* ------------items list --------------- */
+
+ .items{
+    
+  flex-wrap: wrap;
+    width: 70%;
+    padding:  4em 0 5em 0;
+ }
+ .item_box{
+    flex-basis:  30%;
+    margin: 5% 1%;
+    padding: 4.5em;
+   
+ }
+ .item_box p{
+    font-size: 20px;
+ }
+ .item_box i{
+    background-color: #ffa500;
+    padding: 2% 7%;
+    font-size: 23px;
+    border-radius: 10px;
+    margin-top: 20px;
+ }
+/* -------------footer----------------- */
+
+footer{
+    text-align: center;
+    margin-top: 3%;
+    background: url(hallowin-images/footer.png) no-repeat center center/cover;
+
+
+}
+.row-1{
+    margin: 4% 0;
+}
+.row-1 input,.row-1 button{
+    padding: 12px 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.row-1 button{
+    background:  linear-gradient(200deg ,rgba(116 ,0 ,116, 1)35%, rgba(255,165,0.1)100%);
+    border:  2px solid #fff;
+    color: #fff;
+
+}
+.row-1 button:hover{
+    color:  #000;
+    border:  2px solid #000;
+
+}
+.icons{
+    margin-bottom:10px ;
+}
+.icons i{
+    font-size:  3em;
+    cursor: pointer;
+    margin: 0 1%;
+    background:  linear-gradient(200deg ,rgba(116 ,0 ,116, 1)35%, rgba(255,165,0.1)100%);
+    transition: all 0.5s ease-in-out;
+    
+}
+.icons i:hover{
+    background: purple;
+}
+footer p{
+    padding: 5px;
+}
+
+/* ------------------arrow up------------------ */
+
+.top{
+    color: #fff;
+    font-size: 40px;
+    position: fixed;
+    right: 5%;
+    transition: bottom .4s transform .4s;
+    cursor: pointer;
+    bottom:  -50%;
+}
+.top:hover{
+    transform: translateY(-0.6rem);
+    
+}
+.top.show{
+    bottom:  8%;
+}
